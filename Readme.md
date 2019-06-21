@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxMenu - How to create MenuItem.TextTemplate at runtime
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3624/)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to create a TextTemplate and assign it to MenuItem at runtime.</p>
