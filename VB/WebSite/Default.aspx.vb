@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Web
 
-Imports DevExpress.Web.ASPxEditors
+Imports DevExpress.Web
 Imports System.Web.UI
 Imports System.Drawing
 
@@ -14,7 +14,7 @@ Partial Public Class _Default
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 	End Sub
-	Protected Sub ASPxMenu2_ItemDataBound(ByVal source As Object, ByVal e As DevExpress.Web.ASPxMenu.MenuItemEventArgs)
+	Protected Sub ASPxMenu2_ItemDataBound(ByVal source As Object, ByVal e As DevExpress.Web.MenuItemEventArgs)
 		Dim node As SiteMapNode = TryCast(e.Item.DataItem, SiteMapNode)
 		If node IsNot Nothing Then
 			e.Item.TextTemplate = New MenuItemTemplate(node)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 using System.Web.UI;
 using System.Drawing;
 
@@ -12,7 +12,7 @@ public partial class _Default : System.Web.UI.Page {
     protected void Page_Load (object sender, EventArgs e) {
 
     }
-    protected void ASPxMenu2_ItemDataBound (object source, DevExpress.Web.ASPxMenu.MenuItemEventArgs e) {
+    protected void ASPxMenu2_ItemDataBound (object source, DevExpress.Web.MenuItemEventArgs e) {
         SiteMapNode node = e.Item.DataItem as SiteMapNode;
         if (node != null) {
             e.Item.TextTemplate = new MenuItemTemplate(node);
